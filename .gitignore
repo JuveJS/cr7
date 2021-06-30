@@ -2,4 +2,4 @@
 /coverage
 /.local
 /.changelog
-/lib
+/dist

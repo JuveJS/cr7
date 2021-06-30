@@ -67,7 +67,9 @@ function getPlugins(
     extensions,
   };
   if (importLibToEs && type === 'esm') {
-    babelConfig.plugins.push(require.resolve('../lib/transform-import-lib-to-es'));
+    babelConfig.plugins.push(
+      require.resolve('../babel/plugins/transform-import-lib-to-es'),
+    );
   }
   babelConfig.presets.push(...extraBabelPresets);
   babelConfig.plugins.push(...extraBabelPlugins);

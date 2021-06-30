@@ -52,8 +52,7 @@ function stripEmptyKeys(obj) {
     );
     process.exit(1);
   }
-
-  require('../lib')
+  require('./build')
     .default({
       cwd: args.root || process.cwd(),
       watch: args.w || args.watch,
