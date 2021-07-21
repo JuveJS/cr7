@@ -1152,10 +1152,10 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
-"@juve.js/cr7@^0.0.5-alpha":
-  version "0.0.5-alpha"
-  resolved "https://registry.yarnpkg.com/@juve.js/cr7/-/cr7-0.0.5-alpha.tgz#977abc96f3ed52888dc692c0323c46898584fda5"
-  integrity sha512-QwBJYklpFXxm1+U43KwiPfgbeNPAOrkIX6ddx63koSA7vwI+//YMZCJlcFcSH6M53OsYg4aF+nagQDNUB8sbxQ==
+"@juvejs/cr7@^0.0.1-beta.1":
+  version "0.0.1-beta.1"
+  resolved "https://registry.yarnpkg.com/@juvejs/cr7/-/cr7-0.0.1-beta.1.tgz#f21b9a85fe5a4c70e51f0a4d61dd0e80e0b261d0"
+  integrity sha512-X7PE3plhsftENkTR1wUZr2ITzBWwkqgq0yS0qiOmHu2PG3r8ISe/nXd3VqoembFgjbh6TVCgFxVupZzZiVX8eQ==
 
 "@lerna/package@3.16.0":
   version "3.16.0"

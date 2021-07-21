@@ -74,13 +74,13 @@ function getRollupConfig(config: RollupConfig): RollupOptions[] {
       let output: Record<string, any> = {
         file: join(
           cwd,
-          `dist/${(esm && (esm as any).file) || `${name}.esm`}.js`,
+          `lib/${(esm && (esm as any).file) || `${name}.esm`}.js`,
         ),
       };
       // https://rollupjs.org/guide/en/#code-splitting
       if (entry.length > 1) {
         output = {
-          dir: (esm && (esm as any).dir) || 'dist',
+          dir: (esm && (esm as any).dir) || 'lib',
           entryFileNames: `${name}.esm.js`,
         };
       }
@@ -105,7 +105,7 @@ function getRollupConfig(config: RollupConfig): RollupOptions[] {
                   format,
                   file: join(
                     cwd,
-                    `dist/${(esm && (esm as any).file) || `${name}`}.mjs`,
+                    `lib/${(esm && (esm as any).file) || `${name}`}.mjs`,
                   ),
                 },
                 plugins: [
@@ -131,7 +131,7 @@ function getRollupConfig(config: RollupConfig): RollupOptions[] {
           input,
           output: {
             format,
-            file: join(cwd, `dist/${(cjs && (cjs as any).file) || name}.js`),
+            file: join(cwd, `lib/${(cjs && (cjs as any).file) || name}.js`),
           },
           plugins: [
             ...getPlugins(null, config),
@@ -156,7 +156,7 @@ function getRollupConfig(config: RollupConfig): RollupOptions[] {
           output: {
             format,
             sourcemap: umd && umd.sourcemap,
-            file: join(cwd, `dist/${(umd && umd.file) || `${name}.umd`}.js`),
+            file: join(cwd, `lib/${(umd && umd.file) || `${name}.umd`}.js`),
             globals: umd && umd.globals,
             name:
               (umd && umd.name) || (pkg.name && camelCase(basename(pkg.name))),
@@ -180,7 +180,7 @@ function getRollupConfig(config: RollupConfig): RollupOptions[] {
                   sourcemap: umd && umd.sourcemap,
                   file: join(
                     cwd,
-                    `dist/${(umd && umd.file) || `${name}.umd`}.min.js`,
+                    `lib/${(umd && umd.file) || `${name}.umd`}.min.js`,
                   ),
                   globals: umd && umd.globals,
                   name:

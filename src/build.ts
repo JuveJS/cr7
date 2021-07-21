@@ -135,9 +135,9 @@ export async function build(opts: IOpts, extraOpts: IExtraBuildOpts = {}) {
   for (const bundleOpts of bundleOptsArray) {
     validateBundleOpts(bundleOpts, { cwd, rootPath });
 
-    // Clean dist
-    log(chalk.gray(`Clean dist directory`));
-    rimraf.sync(join(cwd, 'dist'));
+    // Clean lib
+    log(chalk.gray(`Clean lib directory`));
+    rimraf.sync(join(cwd, 'lib'));
 
     // Build umd
     if (bundleOpts.umd) {

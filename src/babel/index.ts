@@ -11,7 +11,7 @@ async function babelBuild(babelOptions: BabelOptions) {
 
   const srcPath = join(cwd, 'src');
 
-  const targetDir = type === 'esm' ? 'es' : 'dist';
+  const targetDir = type === 'esm' ? 'es' : 'lib';
 
   const targetPath = join(cwd, targetDir);
 

@@ -25,7 +25,7 @@ function createStream(babelOptions: BabelOptions, patterns: string[]) {
 
   const tsConfig = getTSConfig(cwd, rootPath);
 
-  const targetDir = type === 'esm' ? 'es' : 'dist';
+  const targetDir = type === 'esm' ? 'es' : 'lib';
 
   const targetPath = join(cwd, targetDir);
 

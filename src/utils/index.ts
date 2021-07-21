@@ -9,7 +9,6 @@ import gulpLess from 'gulp-less';
 import gulpPlumber from 'gulp-plumber';
 import gulpIf from 'gulp-if';
 import chalk from 'chalk';
-import AJV from 'ajv';
 
 export {
   vfs,
