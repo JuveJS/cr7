@@ -1,6 +1,6 @@
 {
   "name": "@juvejs/cr7",
-  "version": "0.0.1-beta.3",
+  "version": "0.0.1-beta.4",
   "license": "MIT",
   "description": "Library build tool based on Babel & Rollup.",
   "main": "lib/cli.js",
@@ -26,7 +26,7 @@
     "@babel/preset-react": "7.12.1",
     "@babel/preset-typescript": "7.12.1",
     "@babel/register": "7.12.1",
-    "@juvejs/cr7": "^0.0.1-beta.1",
+    "@juvejs/cr7": "^0.0.1-beta.4",
     "@lerna/project": "^3.21.0",
     "@rollup/plugin-babel": "5.2.1",
     "@rollup/plugin-commonjs": "16.0.0",
